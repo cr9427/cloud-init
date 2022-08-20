@@ -1,0 +1,8 @@
+#cloud-config
+# vim: syntax=yaml
+#
+power_state:
+  mode: 'reboot'
+  message: "Bye Bye - cloud-init has been done his job! Let's start from fresh reboot!"
+  timeout: 30
+  condition: true
