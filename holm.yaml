@@ -2,6 +2,7 @@
 # vim: syntax=yaml
 #
 users:
+  - default
   - name: 'holm'
     gecos: 'Holm'
     primary_group: 'holm'
