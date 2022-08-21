@@ -1,0 +1,14 @@
+#cloud-config
+# vim: syntax=yaml
+#
+packages:
+  - net-tools
+  - etckeeper
+  - zsh
+  - htop
+  - vim-nox
+  - psmisc
+  - git
+  - lsof
+  - sudo
+  - binutils

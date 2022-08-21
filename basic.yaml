@@ -1,0 +1,20 @@
+#cloud-config
+# vim: syntax=yaml
+#
+timezone: 'Europe/Berlin'
+ssh_pwauth: true
+disable_root: true
+package_update: true
+package_upgrade: false
+
+apt:
+  proxy: 'http://apt-cache:3142/'
+  http_proxy: 'http://apt-cache:3142/'
+  https_proxy: 'http://apt-cache:3142/'
+
+ssh_authorized_keys:
+  - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBVtawLHGmKWf8WBPLhqksVCLvLYj+B8fev8QNEk/tVV holm@vsrv10.crylle.local'
+  - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDShA7vPizumHqnXS9nsrJVgNRqRnTwUv8K8I13jgdL9 ubuntu@srv1.crylle.local'
+
+users:
+  - default

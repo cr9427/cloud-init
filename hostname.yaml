@@ -1,0 +1,5 @@
+#cloud-config
+# vim: syntax=yaml
+#
+hostname: 'unassigned.crylle.local'
+manage_etc_hosts: true

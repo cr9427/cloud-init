@@ -1,0 +1,14 @@
+#cloud-config
+# vim: syntax=yaml
+#
+puppet:
+  install: true
+  install_type: 'aio'
+  cleanup: false
+  start_service: false
+  exec: true
+  exec_args: ['--test']
+  conf:
+    agent:
+      allow_duplicate_certs: true
+      onetime: true

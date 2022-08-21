@@ -1,0 +1,8 @@
+#cloud-config
+# vim: syntax=yaml
+#
+packages:
+  - qemu-guest-agent
+
+runcmd:
+  - [ systemctl, start, qemu-guest-agent ]

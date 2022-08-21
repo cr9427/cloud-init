@@ -1,0 +1,12 @@
+#cloud-config
+# vim: syntax=yaml
+#
+users:
+  - name: 'holm'
+    gecos: 'Holm'
+    primary_group: 'holm'
+   #passwd: # shloud be a hash of command 'mkpasswd --method=SHA-512 --roun
+    groups: [adm, audio, cdrom, dialout, lxd, plugdev, sudo, video]
+    shell: '/bin/zsh'
+    homedir: '/homes/holm'
+    sudo: [ "ALL=(ALL) NOPASSWD:ALL" ]

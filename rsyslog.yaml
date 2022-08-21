@@ -1,0 +1,9 @@
+#cloud-config
+# vim: syntax=yaml
+#
+rsyslog:
+  config_dir: /etc/rsyslog.d
+  configs:
+    - content: "*.*   @@syslog"
+      filename: 10-remote.conf
+  service_reload_command: [ systemctl restart rsyslog ]
