@@ -11,3 +11,4 @@ packages:
   - lsof
   - sudo
   - binutils
+  - apt-utils
