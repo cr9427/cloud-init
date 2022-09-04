@@ -12,3 +12,6 @@ packages:
   - sudo
   - binutils
   - apt-utils
+  - iputils-ping
+  - openssh-server
+  - curl
