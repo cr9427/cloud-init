@@ -11,7 +11,7 @@ package_upgrade: false
 apt:
   proxy: 'http://apt-cache:3142/'
   http_proxy: 'http://apt-cache:3142/'
-  https_proxy: 'http://apt-cache:3142/'
+  https_proxy: 'false'
 
 ssh_authorized_keys:
   - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBVtawLHGmKWf8WBPLhqksVCLvLYj+B8fev8QNEk/tVV holm@vsrv10.crylle.local'
