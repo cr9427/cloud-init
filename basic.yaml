@@ -9,7 +9,6 @@ package_update: true
 package_upgrade: false
 
 apt:
-  proxy: 'http://apt-cache:3142/'
   http_proxy: 'http://apt-cache:3142/'
   https_proxy: 'false'
 
