@@ -1,3 +1,4 @@
 #include
 http://www.crylle.local/cloud-init/basic.yaml
 http://www.crylle.local/cloud-init/packages.yaml
+http://www.crylle.local/cloud-init/ansible-pull.yaml

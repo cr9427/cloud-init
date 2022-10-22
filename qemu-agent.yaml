@@ -1,21 +1,14 @@
 #cloud-config
 # vim: syntax=yaml
 #
+merge_how:
+ - name: list
+   settings: [append]
+ - name: dict
+   settings: [no_replace, recurse_list]
+
 packages:
   - qemu-guest-agent
-  - net-tools
-  - zsh
-  - htop
-  - vim-nox
-  - psmisc
-  - git
-  - lsof
-  - sudo
-  - binutils
-  - apt-utils
-  - iputils-ping
-  - openssh-server
-  - curl
 
 runcmd:
   - [ systemctl, start, qemu-guest-agent ]

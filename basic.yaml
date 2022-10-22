@@ -1,11 +1,17 @@
 #cloud-config
 # vim: syntax=yaml
 #
+merge_how:
+ - name: list
+   settings: [append]
+ - name: dict
+   settings: [no_replace, recurse_list]
+
 manage_etc_hosts: true
 timezone: 'Europe/Berlin'
 ssh_pwauth: true
 disable_root: true
-package_update: true
+package_update: false
 package_upgrade: false
 
 apt:
