@@ -2,17 +2,17 @@
 # vim: syntax=yaml
 #
 merge_how:
- - name: list
-   settings: [append]
- - name: dict
-   settings: [no_replace, recurse_list]
+  - name: list
+    settings: [append]
+  - name: dict
+    settings: [no_replace, recurse_list]
 
 users:
-  - name: 'holm'
-    gecos: 'Holm'
-    primary_group: 'holm'
-   #passwd: # shloud be a hash of command 'mkpasswd --method=SHA-512 --roun
-    groups: [adm, audio, cdrom, dialout, lxd, plugdev, sudo, video]
-    shell: '/bin/zsh'
-    homedir: '/homes/holm'
-    sudo: [ "ALL=(ALL) NOPASSWD:ALL" ]
+  - name: holm
+    gecos: "Holm"
+    groups: adm, lxd, plugdev, sudo
+    shell: /bin/zsh
+    sudo: "ALL=(ALL) NOPASSWD:ALL"
+    uid: 1001
+    homedir: /homes/holm
+    no_create_home: true

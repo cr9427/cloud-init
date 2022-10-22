@@ -2,10 +2,10 @@
 # vim: syntax=yaml
 #
 merge_how:
- - name: list
-   settings: [append]
- - name: dict
-   settings: [no_replace, recurse_list]
+  - name: list
+    settings: [append]
+  - name: dict
+    settings: [no_replace, recurse_list]
 
 packages:
   - git
@@ -13,3 +13,4 @@ packages:
 
 runcmd:
   - [ ansible-pull, -U, https://github.com/cr9427/ansible.git ]
+
