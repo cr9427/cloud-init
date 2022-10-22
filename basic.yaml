@@ -9,6 +9,7 @@ merge_how:
 
 manage_etc_hosts: true
 timezone: 'Europe/Berlin'
+ssh_genkeytypes: [ed25519]
 ssh_pwauth: true
 disable_root: true
 package_update: false

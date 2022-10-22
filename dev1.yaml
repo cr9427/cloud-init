@@ -3,3 +3,13 @@
 #
 hostname: 'dev1.crylle.local'
 manage_etc_hosts: true
+ssh_keys:
+  ed25519_private: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACCHOYbDojGpAX5l06Fd6b9YBX6gscmrYVIBoWacjEXoAAAAAJC6F/0+uhf9
+    PgAAAAtzc2gtZWQyNTUxOQAAACCHOYbDojGpAX5l06Fd6b9YBX6gscmrYVIBoWacjEXoAA
+    AAAEB0e1fCn2/mynfVGhJjhrU1XqSx4/50YoeTksCVyM7Wioc5hsOiMakBfmXToV3pv1gF
+    fqCxyathUgGhZpyMRegAAAAACXJvb3RAZGV2MQECAwQ=
+    -----END OPENSSH PRIVATE KEY-----
+  ed25519_public: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIc5hsOiMakBfmXToV3pv1gFfqCxyathUgGhZpyMRegA root@dev1.crylle.local
