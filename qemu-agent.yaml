@@ -3,6 +3,19 @@
 #
 packages:
   - qemu-guest-agent
+  - net-tools
+  - zsh
+  - htop
+  - vim-nox
+  - psmisc
+  - git
+  - lsof
+  - sudo
+  - binutils
+  - apt-utils
+  - iputils-ping
+  - openssh-server
+  - curl
 
 runcmd:
   - [ systemctl, start, qemu-guest-agent ]
