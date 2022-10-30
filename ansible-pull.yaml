@@ -12,5 +12,4 @@ packages:
   - ansible
 
 runcmd:
-  - [ ansible-pull, -U, https://github.com/cr9427/ansible.git ]
-
+  - [ansible-pull, -U, https://github.com/cr9427/ansible.git]

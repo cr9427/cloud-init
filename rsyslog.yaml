@@ -6,4 +6,5 @@ rsyslog:
   configs:
     - content: "*.*   @@syslog"
       filename: 10-remote.conf
-  service_reload_command: [ systemctl restart rsyslog ]
+  service_reload_command:
+    - [systemctl restart rsyslog]
